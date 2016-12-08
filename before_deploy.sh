@@ -3,7 +3,7 @@
 git config --global user.email "builds@travis-ci.com"
 git config --global user.name "Travis CI"
 
-if [ "$TOXENV" == "win" ]; then
+if [ "$TOXENV" == "WIN" ]; then
 	BUILDTYPE="win"
 else
 	BUILDTYPE=$TRAVIS_OS_NAME
